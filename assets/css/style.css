@@ -1,21 +1,17 @@
-/* Please read through the provided code below to understand it */
-
-/* QUESTION #3: PLACE SIDEBAR STYLES BELOW */
-
-
 .home-content {
 	text-align:center;
 	margin:0 auto;
-	top:100px;
+	top:50px;
 	position:relative;
 	width:700px;
 	height:500px;
+
 	}
 
 .lol-content {
 	text-align:center;
 	margin:0 auto;
-	top:150px;
+	top:50px;
 	position:relative;
 	width:700px;
 	height:500px;
@@ -28,21 +24,26 @@
 	left:120px;
 	position:absolute;
 	height:500px;
+
 	}
 
 
 
 h1 {
 	color: #FFF;
-	font-size: 65px;
+	font-size: 55px;
 	font-weight: bold;
-	letter-spacing: 5px;
+	letter-spacing: 0px;
+	text-align: left;
+    text-shadow: 1px 1px 4px #c0c0c0;
+
+
 	}
+
 h2 {
-	color: #FFF;
+	color: #40E0D0;
 	padding-top:10px;
-	font-size: 50px;
-	padding-left:30px;
+	font-size: 20px;
 	font-weight: bold;
 	}
 
@@ -54,12 +55,26 @@ h3 {
 	}
 
 #welcome {
-	color: #2C3539;
 	margin-top:-20px;
-	letter-spacing: 2px;
-	font-size:20px;
+	font-size:18px;
+	color:#fff;
+	text-align: left;
+	padding: 20px;
 
 }
+
+a:link{
+	color:#C0C0C0;
+}
+
+a:visited{
+	color:#C0C0C0;
+}
+
+a:hover{
+	color: #fff;
+}
+
 
 .about-info {
 	background-color: #E0E9ED;
@@ -152,7 +167,7 @@ textarea #styled {
 #contact-form {
 	padding:10px;
 }
-/* sections from hw8*/
+
 
 .section {
 	width:100%;
@@ -164,6 +179,7 @@ textarea #styled {
 #work-section{
 	background-color: #2C3539;
 }
+
 #major-section{
 	background-color: #8bb2af;
 }
@@ -197,7 +213,7 @@ body, html {
 	height: 100%;
 	min-width: 960px;
 	-webkit-font-smoothing: antialiased;
-	background-color: #c2c2a3;
+	background-color: #136c68;
 	-o-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 	color:#000;
@@ -223,150 +239,34 @@ a {
 }
 
 
+/* arrow*/
 
 
 
 
-/*work*/
-.home-content {
-	text-align:center;
-	margin:0 auto;
-	top:100px;
-	position:relative;
-	width:700px;
-	height:500px;
-	}
-
-
-
-.home-item{
-	width:100px;
-	height:100px;
-	float:left;
-	position:absolute;
-	background-color: white;
+/*jquery stuff*/
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
 
 
-#name-text {
-	position: relative;
-	background-color:#000;
-	top:50px;
-}
 
 
-#fuck{
-	background-color: #fff;
-}
-/* YOU DON'T NEED TO UNDERSTAND THE CODE BELOW */
-
-#nav-toggle { 
-	position: absolute; 
-	left: 50%; top: 50%; 
-}
-
-#nav-toggle {
-	padding: 10px 30px 15px 0px; 
-}
-
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-	height: 3px;
-	width: 30px;
-	background: #fff;
-	position: absolute;
-	display: block;
-	content: '';
-}
-
-#nav-toggle span:before {
-	top: -10px; 
-}
-
-#nav-toggle span:after {
-	bottom: -10px;
-}
-
-/* FREEBIES */
-
-/* Styling the Sidebar Button */
-#sidebar-button {
-	position: fixed;
-	z-index: 100;
-	left: 15px;
-	top: 15px;
-	cursor: pointer;
-	-webkit-transition: all .3s;
-	-moz-transition: all .3s;
-	-o-transition: all .3s;
-	transition: all .3s;
-} 
-
-/* Overriding default styles on the ul */
-.sidebar-container ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	margin-top: 10px;
-}
-
-.page-wrapper {
-	height: 100%;
-	width: 100%;
-	background-color: #fff;
-	-webkit-transition: all .3s;
-	-moz-transition: all .3s;
-	transition: all .3s;
-}
-
-/* Styling for the carousel previous button */
-#carousel-prev {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    left: 60px;
-    top: 50%;
-    margin-top: -30px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    -webkit-transition: all 0.3s;
-}
-
-/* Styling for the carousel next button */
-#carousel-next {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    right: 60px;
-    top: 50%;
-    margin-top: -30px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    -webkit-transition: all 0.3s;
-}
-
-
-/* jQuery Manipulation Classes */
-
-.no-scroll {
-	overflow: hidden;
-}
-
-.wrapper-active, .button-active {
-	-webkit-transform: translateX(280px);
-	-moz-transform: translateX(280px);
-	transform: translateX(280px);
-}
-
-.sidebar-active {
-	-webkit-transform: translateX(0px);
-	-moz-transform: translateX(0px);
-	-o-transform: translateX(0px);
-}
-
-textarea{
-	width:500px;
-}
