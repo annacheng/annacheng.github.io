@@ -11,7 +11,7 @@
 .lol-content {
 	text-align:center;
 	margin:0 auto;
-	top:50px;
+	top:25px;
 	position:relative;
 	width:700px;
 	height:500px;
@@ -130,7 +130,7 @@ a:hover{
 .nav-text {
 	font-weight: bold;
 	font-size:18px;
-	float:left;	
+	float:left;
 	text-align:center;
 	margin: 10px;
     color: #00696B;
@@ -266,7 +266,3 @@ a {
     50% { opacity:0; }
     100% { opacity:1; }
 }
-
-
-
-
